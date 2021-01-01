@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/questionsCard"
+    android:layout_margin="10dp"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/finalLayout"
+        tools:background="@drawable/layout_questions"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/questionsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+>
+
+            <TextView
+
+                android:id="@+id/questionNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/ubuntumono_bold"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                tools:text="0  " />
+
+            <TextView
+                android:id="@+id/questionTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/ubuntumono_bold"
+                android:padding="5dp"
+                android:text="Find Maximum and minumim element"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/doneAndRedoBcg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:background="?android:selectableItemBackground"
+                android:id="@+id/done"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_done" />
+
+            <ImageButton
+                android:background="?android:selectableItemBackground"
+                android:id="@+id/redo"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_undo" />
+
+            <ImageButton
+                android:background="?android:selectableItemBackground"
+                android:id="@+id/bookMark"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                tools:srcCompat="@drawable/ic_isnotbooked" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
